@@ -24,9 +24,14 @@ h1,h2,h3,h4,h5,h6{
 /* Container */
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
 
+}
+.header--container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
@@ -383,7 +388,7 @@ h1,h2,h3,h4,h5,h6{
         background: url("../img/2_bot.png") center no-repeat;
         -webkit-background-size: cover;
 }
-.projects--telegram-bot{
+.projects--podcast{
     background-color: #2E388E;
 
 }
@@ -454,7 +459,7 @@ h1,h2,h3,h4,h5,h6{
         text-align: center;
     }
     .member__image{
-        border-radius: 50%;
+        
     }
 }
 @media(max-width:767px){
@@ -476,14 +481,17 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .member__image{
-        border-radius: 50%;
+        
     }
+   
 }
 
 .member__image{
     width: 80%;
     border-radius: 50%;
     
+}
+.member__image-wrapper{
     
 }
 .member__text{
@@ -496,7 +504,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .member__full-name{
     font-size: 24px;
-    line-height: 23px;
+    line-height: 25px;
 }
 
 .page__social-media__image{
@@ -513,7 +521,7 @@ h1,h2,h3,h4,h5,h6{
   .flip-container,
   .front,
   .back {
-    width: 420px;
+    width: 520px;
     height: 100px;
     border-radius: 15px;
     font-size: 20px;
@@ -590,15 +598,18 @@ h1,h2,h3,h4,h5,h6{
 
 @media(min-width:768px){
     .grid{
+        
         margin-top: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row-gap: 40px;
+        grid-row-gap: 50px;
         grid-column-gap: 100px;
+        justify-items: center; 
     }
 }
 @media(max-width:768px){
     .grid{
+        justify-items: center; 
         margin-top: 50px;
         display: grid;
         grid-template-columns: 1fr;
@@ -607,6 +618,7 @@ h1,h2,h3,h4,h5,h6{
     .flip-container{
         margin: 0 auto;
     }
+    
 }
 .header__link--partners{
     color:#333;
@@ -625,8 +637,13 @@ h1,h2,h3,h4,h5,h6{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 @media(max-width:768px){
+    .flip-container,
+  .front,
+  .back {
+    width: 320px;}
     .partners{
         margin-top: 50px;
         display: grid;
