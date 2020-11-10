@@ -300,8 +300,7 @@ h1,h2,h3,h4,h5,h6{
 
     
 .submenu li{
-    margin-left: 30px; 
-    list-style: square outside;
+    margin-left: 10px; 
  }
 
 /* Intro */
@@ -384,6 +383,10 @@ h1,h2,h3,h4,h5,h6{
         background: url("../img/2_bot.png") center no-repeat;
         -webkit-background-size: cover;
 }
+.projects--telegram-bot{
+    background-color: #2E388E;
+
+}
 @media(min-width:768px){
     .page{
         width:100%;
@@ -451,6 +454,7 @@ h1,h2,h3,h4,h5,h6{
         text-align: center;
     }
     .member__image{
+        border-radius: 50%;
     }
 }
 @media(max-width:767px){
@@ -472,7 +476,7 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .member__image{
-        
+        border-radius: 50%;
     }
 }
 
@@ -483,14 +487,16 @@ h1,h2,h3,h4,h5,h6{
     
 }
 .member__text{
-    margin-top: -10px;
+    margin-top: 0px;
     overflow: hidden;
     font-size: 1.5em;
     font-weight: 700;
     font-size: 16px;
+    line-height: 19px;
 }
 .member__full-name{
     font-size: 24px;
+    line-height: 23px;
 }
 
 .page__social-media__image{
@@ -507,7 +513,7 @@ h1,h2,h3,h4,h5,h6{
   .flip-container,
   .front,
   .back {
-    width: 320px;
+    width: 420px;
     height: 100px;
     border-radius: 15px;
     font-size: 20px;
@@ -526,6 +532,7 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: 0;
     left: 0;
+    text-align: center;
   }
   .front {
     z-index: 2;
@@ -586,7 +593,7 @@ h1,h2,h3,h4,h5,h6{
         margin-top: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row-gap: 25px;
+        grid-row-gap: 40px;
         grid-column-gap: 100px;
     }
 }
